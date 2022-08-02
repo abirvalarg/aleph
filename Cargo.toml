@@ -1,0 +1,18 @@
+[package]
+name = "aleph"
+version = "0.1.0"
+edition = "2018"
+
+[build-dependencies]
+cc = "^1"
+
+[dependencies]
+
+[dependencies.lazy_static]
+version = "1.4.0"
+features = ["spin_no_std"]
+
+[dependencies.bitvec]
+version = "^1"
+default-features = false
+features = ["atomic", "alloc"]
